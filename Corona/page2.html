@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 2</title>
+  <style>
+    * {box-sizing: border-box}
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    .tablink {
+      background-color: rgba(0,0,0,0.3);
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+    .tablink:hover {
+      background-color:rgb(88, 87, 87);
+    }
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }  
+    #Home {
+      background-image: url(forest.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    #News {
+      background-image: url(sea.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    #Contact {
+      background-image: url(sky.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    #About {
+      background-image: url(valley.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .row {
+      margin: 20px 200px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .content {
+      background-color:rgba(0, 0, 0, 0.3);
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>  
+  <button class="tablink" onclick="openPage('Home', this, 'grey')"id="defaultOpen">Sifat 1</button>
+  <button class="tablink" onclick="openPage('News', this, 'grey')">Sifat 2</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'grey')">Sifat 3</button>
+  <button class="tablink" onclick="openPage('About', this, 'grey')">Sifat 4</button>
+
+  <div id="Home" class="tabcontent">
+    <div class="row">
+      <div class="content">
+        <h2>Virus Corona sensitif dengan cuaca panas</h2>
+        <p>Penelitian dari Universitas Sun Yat-sen di Guangzhou, China menyimpulkan Corona menyukai suhu tertentu. Hal itu karena Corona bisa menyebar lebih cepat. Para peneliti menemukan kajian untuk menentukan bagaimana penyebaran virus Corona bisa terpengaruh oleh pergantian musim dan temperatur.</p>
+        <p>"Virus itu sangat sensitif dengan suhu tinggi yang berarti di negara lebih panas bisa mencegah virus itu menyebar dan sebaliknya di negara lebih dingin bisa menyebar lebih cepat," sebut penelitian.</p>
+        <p>Peneliti lain seperti Hassan Zaraket, asisten direktur Pusat Penelitian Penyakit Menular di Universitas Amerika Beirut mengatakan ada kemungkinan suhu lebih hangat dapat menurunkan kekuatan Corona.</p>
+        <p>"Seiring suhu yang makin menghangat, stabilitas virus ini bisa menurun dan jika cuaca bisa membantu kita mengurangi penyebaran dan stabilitas lingkungan dari virus ini maka mungkin kita bisa memutus rantai penyebarannya," katanya.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="News" class="tabcontent">
+    <div class="row">
+      <div class="content">
+        <h2>Penyebaran corona tidak mengenal suhu</h2>
+        <p>Sayangnya penelitian sebelumnya sempat disangkal oleh Marc Lipsitch, dari sekolah Kesehatan Umum T.H Chan Harvard. Dia menemukan penularan Corona akan tetap terjadi dan bisa terus menyebar di berbagai kondisi suhu. Baik di wilayah dingin, kering, hingga tropis.</p>
+        <p>"Cuaca sendiri, seperti meningkatkan suhu dan kelembaban seiring musim semi datang beberapa bulan lagi di wilayah Bumi utara tidak secara langsung membuat kasus corona menurun jika tanpa penerapan aturan ketat dari otoritas kesehatan," tulis studi yang dipublikasikan Februari lalu itu. Penelitian itu juga masih menunggu evaluasi dari segi keilmuan oleh peneliti lain.</p>
+      </div>
+    </div>
+  </div>
+      
+  <div id="Contact" class="tabcontent">
+    <div class="row">
+      <div class="content">
+        <h2>Butuh inang</h2>
+        <p>Corona membutuhkan inang atau benda hidup, seperti manusia untuk bisa bertahan hidup lebih lama. Menurut Prof. dr. Amin Soebandrio, seorang pakar virus Lembaga Eijkman, virus ini tidak bisa hidup sendiri sehingga untuk bereplikasi dia membutuhkan sel hidup. Berbeda dengan bakteri, jika kita cemplungkan dalam sirup dia bisa tumbuh.</p>
+      </div>
+    </div>
+  </div>
+      
+  <div id="About" class="tabcontent">
+    <div class="row">
+      <div class="content">
+        <h2>Dapat hidup di benda mati</h2>
+        <p>Corona dapat hidup selama beberapa waktu di benda mati. Dilansir dari NPR, sebuah studi menemukan bahwa virus corona dapat bertahan hidup di permukaan keras seperti plastik dan stainless steel hingga 72 jam dan di atas kardus hingga 24 jam.</p>
+      </div>
+    </div>
+  </div>
+      
+  <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+      document.getElementById("defaultOpen").click();
+  </script>
+         
+</body>
+</html> 

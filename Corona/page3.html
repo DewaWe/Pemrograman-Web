@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 3</title>
+  <style>
+    * {box-sizing: border-box}
+    body {
+      font-family: "Lato", sans-serif;
+      background-image: url(mountain.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .tab {
+      float: right;
+      background-color: #f1f1f1;
+      width: 25%;
+      height: 300px;
+    }
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 21px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    .tab button.active {
+      background-color: #ccc;
+    }
+    .tabcontent {
+      float: left;
+      padding: 50px 200px;
+      border: none;
+      width: 70%;
+      border-left: none;
+      height: 500px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <div class="tab">
+      <button class="tablinks" onmouseover="openCity(event, 'cuci_tangan')">Cuci Tangan</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Sentuh')">Hindari Sentuh Wajah</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Etika')">Etika Bersin dan Batuk</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Masker')">Memakai Masker</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Interaksi')">Hindari Interaksi Langsung</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Berbagi')">Hindari Berbagi Barang Pribadi</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Distancing')">Social Distancing</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Cuci')">Cuci Bahan Makanan</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Perabot')">Bersihkan Perabot Rumah</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Imun')">Tingkatkan Imun Tubuh</button>
+    </div>
+    
+    <div id="cuci_tangan" class="tabcontent">
+      <h3 align = "center">Cuci Tangan</h3>
+      <p align = "center">Tindakan pertama yang dapat dilakukan untuk menangkal virus corona adalah dengan rajin mencuci tangan. Sebab, tangan adalah salah satu anggota tubuh yang menjadi sumber penyakit.</p>
+      <p align = "center">Cuci tangan dengan durasi minimal 20 detik untuk membunuh virus corona menggunakan sabun dan air bersih yang mengalir. Setelah itu, keringkan tangan menggunakan kain yang bersih atau tisu.</p>
+      <p align = "center">Tindakan pencegahan yang satu ini dianggap lebih efektif untuk membunuh kuman, bakteri, termasuk virus corona. Cuci tangan merupakan langkah yang disarankan oleh banyak pihak, termasuk Organisasi Kesehatan Dunia.</p>
+    </div>
+    
+    <div id="Sentuh" class="tabcontent">
+      <h3 align = "center">Hindari Sentuh Wajah</h3>
+      <p align = "center">Telah diketahui bahwa tangan dapat menjadi sumber penyakit sebab sering terjadi kontak dengan benda maupun orang lain. Sementara itu, virus corona disinyalir dapat masuk tubuh manusia melalui segitiga wajah yakni mata, hidung, dan mulut.</p> 
+      <p align = "center">Maka dari itu, hindari untuk menyentuh wajah menggunakan tangan. Apabila terpaksa harus menyentuh wajah, maka pastikan untuk mencuci tangan terlebih dahulu dengan sabun.</p>
+    </div>
+    
+    <div id="Etika" class="tabcontent">
+      <h3 align = "center">Etika Bersin dan Batuk</h3>
+      <p align = "center">Terapkan etika bersin dan batuk dengan benar menggunakan siku tangan bagian dalam atau tisu bersih. Sebab, cairan yang diproduksi pada saat batuk dan bersin tersebut dapat menjadi media penularan virus corona.</p>
+      <p align = "center">Apabila Anda menggunakan tisu, maka segera buang ke tempat sampah dan cuci tangan menggunakan sabun hingga bersih dan kering kembali.</p>
+    </div>
+    
+    <div id="Masker" class="tabcontent">
+      <h3 align = "center">Memakai Masker</h3>
+      <p align = "center">Virus corona tidak menyebar melalui udara. Namun, penggunaan masker dapat meminimalisir penularan virus corona. Sebab, virus corona dapat menyebar melalui droplets dan dapat masuk ke dalam tubuh melalui selaput lender seperti mata, mulut, dan hidung.</p>
+      <p align = "center">Masker juga dapat digunakan ketika seseorang dalam kondisi yang kurang sehat. Hindari untuk menggunakan satu masker secara berulang-ulang. Sebab, masker dapat mengandung berbagai jenis kuman, bakteri, dan virus setelah dipakai.</p>
+    </div>
+    
+    <div id="Interaksi" class="tabcontent">
+      <h3 align = "center">Hindari Interaksi Langsung</h3>
+      <p align = "center">Cara sederhana guna menangkal virus corona yang kelima adalah hindari interaksi secara langsung seperti berpelukan, berjabat tangan, dan lain sebagainya.</p>
+      <p align = "center">Dengan menghindari kontak kulit dengan orang lain, maka Anda dapat mengurangi penyebaran virus corona.</p>
+    </div>
+
+    <div id="Berbagi" class="tabcontent">
+      <h3 align = "center">Hindari Berbagi Barang Pribadi</h3>
+      <p align = "center">Barang pribadi milik orang lain dapat saja meningkatkan risiko penularan virus corona. Sebab meskipun tidak nampak gejala, virus ini dapat menginfeksi tubuh manusia hingga berstatus sebagai silent carrier yang membawa dan menularkan virus corona covid-19 kepada orang lain.</p>
+      <p align = "center">Maka dari itu, selalu gunakan barang sendiri dan hindari untuk meminjam barang pada orang lain. Hal tersebut merupakan langkah yang dapat dilakukan untuk menekan laju penyebaran virus corona yang berbahaya.</p>
+    </div>
+
+    <div id="Distancing" class="tabcontent">
+      <h3 align = "center">Social Distancing</h3>
+      <p align = "center">Social atau physical distancing adalah salah satu imbauan yang sering digemakan oleh berbagai pihak. Sebab, dengan menjaga jarak antara satu sama lain dipercaya dapat mengurangi risiko penyebaran virus corona.</p>
+      <p align = "center">Selalu perhatikan jarak fisik dengan orang lain yakni minimal 1 meter. Langkah ini dapat diterapkan saat berada di tempat umum ataupun saat di luar rumah guna menangkal virus masuk ke dalam tubuh dan menyebabkan masalah kesehatan yang serius.</p>
+    </div>
+
+    <div id="Cuci" class="tabcontent">
+      <h3 align = "center">Cuci Bahan Makanan</h3>
+      <p align = "center">Cuci selalu bahan makanan yang diperoleh sebelum mengolahnya. Sebab, pada bahan makanan selalu saja terdapat kemungkinan adanya kuman, bakteri, hingga virus corona.</p>
+      <p align = "center">Anda dapat mencuci bahan makanan sebelum disimpan di dalam lemari pendingin dengan menggunakan larutan hidrogen peroksida ataupun cuka yang dapat membunuh bakteri, kuman, dan virus dengan cukup efektif.</p>
+    </div>
+
+    <div id="Perabot" class="tabcontent">
+      <h3 align = "center">Bersihkan Perabot Rumah</h3>
+      <p align = "center">Virus corona dapat menempel pada permukaan benda yang sering terjadi interaksi. Maka dari itu, bersihkan selalu perabotan rumah secara rutin.</p>
+      <p align = "center">Bila perlu, semprotkan cairan disinfektan setiap pagi dan sore hari yakni sebelum dan setelah beraktivitas guna membunuh virus corona.</p>
+    </div>
+
+    <div id="Imun" class="tabcontent">
+      <h3 align = "center">Tingkatkan Imun Tubuh</h3>
+      <p align = "center">Tidak hanya melakukan tindakan pencegahan di luar jaringan tubuh, namun Anda juga perlu melakukan tindakan pencegahan dari dalam tubuh.</p>
+      <p align = "center">Caranya adalah dengan meningkatkan imunitas atau sistem kekebalan tubuh terhadap berbagai virus termasuk virus corona covid-19. Beberapa cara yang dapat dilakukan untuk meningkatkan imunitas tubuh adalah dengan melakukan aktivitas fisik secara rutin dan mengonsumsi makanan sehat yang dapat meningkatkan sistem kekebalan tubuh.</p>
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+       
+    </body>
+    </html> 
